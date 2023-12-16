@@ -5,6 +5,10 @@ name = "pypi"
 
 [packages]
 graphene = "*"
+flask = "*"
+flask-sqlalchemy = "*"
+ariadne = "*"
+flask-cors = "*"
 
 [dev-packages]
 
