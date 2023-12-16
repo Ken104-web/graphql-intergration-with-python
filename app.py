@@ -4,9 +4,12 @@ from flask import request, jsonify
 from ariadne import load_schema_from_path, make_executable_schema, \
     graphql_sync, snake_case_fallback_resolvers, ObjectType
 from ariadne.explorer import ExplorerPlayground
+from api.queries import listPosts_resolver
+
+query = ObjectType("Query")
+query.set_field("listPosts", listPosts_resolver)
 
 PLAYGROUND_HTML = ExplorerPlayground(title="Cool API").html(None)
-from api.models import Post
 
 type_defs = load_schema_from_path("schema.graphql")
 schema = make_executable_schema(

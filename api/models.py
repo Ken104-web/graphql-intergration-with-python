@@ -14,7 +14,7 @@ class Post(db.Model):
             "id": self.id,
             "title": self.title,
             "description": self.description,
-            "created_at": str(self.created_at.strftime('%d-%m-%Y'))
+            # "created_at": str(self.created_at.strftime('%d-%m-%Y'))
         }
 
 
