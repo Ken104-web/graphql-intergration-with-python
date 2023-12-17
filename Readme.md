@@ -14,4 +14,5 @@ Here is a simple image shot of a post request
 ![Post request](<Screenshot from 2023-12-17 23-50-40.png>)
 
 # Code along 
-If intrested in grapql you can check out [here](https://graphql.org/)  and [here](https://www.apollographql.com/blog/complete-api-guide) for more
+If intrested in graphql you can check out [here](https://graphql.org/)  and [here](https://www.apollographql.com/blog/complete-api-guide) for more
+
