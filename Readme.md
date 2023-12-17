@@ -16,3 +16,5 @@ Here is a simple image shot of a post request
 # Code along 
 If intrested in graphql you can check out [here](https://graphql.org/)  and [here](https://www.apollographql.com/blog/complete-api-guide) for more
 
+# Author 
+Kenneth Mwangi
