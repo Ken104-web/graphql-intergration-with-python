@@ -3,7 +3,7 @@
 Graphql a declarative query language for APIs and server runtimes
 
 # Libraries used 
-During this api building the api used was [ariadne](https://ariadnegraphql.org/)
+During this api building the library used was [ariadne](https://ariadnegraphql.org/)
 
 
 There are two more libraries used during python integration more on that [here](https://graphql.org/code/#python-server)
