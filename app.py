@@ -13,7 +13,7 @@ PLAYGROUND_HTML = ExplorerPlayground(title="Cool API").html(None)
 
 type_defs = load_schema_from_path("schema.graphql")
 schema = make_executable_schema(
-    type_defs, snake_case_fallback_resolvers
+    type_defs, query, snake_case_fallback_resolvers
 )
 
 @app.route("/graphql", methods=["GET"])
@@ -31,4 +31,6 @@ def graphql_server():
     )
     status_code = 200 if success else 400
     return jsonify(result), status_code
+
+
 
