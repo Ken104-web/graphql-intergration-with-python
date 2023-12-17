@@ -5,13 +5,15 @@ from ariadne import load_schema_from_path, make_executable_schema, \
     graphql_sync, snake_case_fallback_resolvers, ObjectType
 from ariadne.explorer import ExplorerPlayground
 from api.queries import listPosts_resolver, getPost_resolver
-from api.mutations import create_post_resolver
+from api.mutations import create_post_resolver, update_post_resolver, delete_post_resolver
 
 query = ObjectType("Query")
 mutation = ObjectType("Mutation")
 query.set_field("listPosts", listPosts_resolver)
 query.set_field("getPost", getPost_resolver)
 mutation.set_field("createPost", create_post_resolver)
+mutation.set_field("updatePost", update_post_resolver)
+mutation.set_field("deletePost", delete_post_resolver)
 
 PLAYGROUND_HTML = ExplorerPlayground(title="Cool API").html(None)
 
